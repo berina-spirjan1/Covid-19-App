@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_for_questions"
+    app:startDestination="@id/firstQuestion">
+
+    <fragment
+        android:id="@+id/firstQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.FirstQuestion"
+        android:label="fragment_first_question"
+        tools:layout="@layout/fragment_first_question" >
+        <action
+            android:id="@+id/action_firstQuestion_to_secondQuestion"
+            app:destination="@id/secondQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/firstQuestion"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_firstQuestion_to_underEighteen"
+            app:destination="@id/underEighteen"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@id/firstQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.SecondQuestion"
+        android:label="fragment_second_question"
+        tools:layout="@layout/fragment_second_question" >
+        <action
+            android:id="@+id/action_secondQuestion_to_stranger"
+            app:destination="@id/stranger"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@id/secondQuestion"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_secondQuestion_to_thirdQuestion"
+            app:destination="@id/thirdQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/secondQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.ThirdQuestion"
+        android:label="fragment_third_question"
+        tools:layout="@layout/fragment_third_question" >
+        <action
+            android:id="@+id/action_thirdQuestion_to_fourthQuestion"
+            app:destination="@id/fourthQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/thirdQuestion"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_thirdQuestion_to_positiveOnCovid"
+            app:destination="@id/positiveOnCovid"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@id/thirdQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.FourthQuestion"
+        android:label="fragment_fourth_question"
+        tools:layout="@layout/fragment_fourth_question" >
+        <action
+            android:id="@+id/action_fourthQuestion_to_fiveQuestion"
+            app:destination="@id/fiveQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/fourthQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fiveQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.FiveQuestion"
+        android:label="fragment_five_question"
+        tools:layout="@layout/fragment_five_question" >
+        <action
+            android:id="@+id/action_fiveQuestion_to_sixQuestion"
+            app:destination="@id/sixQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/fiveQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.SixQuestion"
+        android:label="fragment_six_question"
+        tools:layout="@layout/fragment_six_question" >
+        <action
+            android:id="@+id/action_sixQuestion_to_sevenQuestion"
+            app:destination="@id/sevenQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/sixQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sevenQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.SevenQuestion"
+        android:label="fragment_seven_question"
+        tools:layout="@layout/fragment_seven_question" >
+        <action
+            android:id="@+id/action_sevenQuestion_to_eightQuestion"
+            app:destination="@id/eightQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/sevenQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/eightQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.EightQuestion"
+        android:label="fragment_eight_question"
+        tools:layout="@layout/fragment_eight_question" >
+        <action
+            android:id="@+id/action_eightQuestion_to_nineQuestion"
+            app:destination="@id/nineQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/eightQuestion"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_eightQuestion_to_positiveOnCovid"
+            app:destination="@id/positiveOnCovid"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@id/eightQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nineQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.NineQuestion"
+        android:label="fragment_nine_question"
+        tools:layout="@layout/fragment_nine_question" >
+        <action
+            android:id="@+id/action_nineQuestion_to_tenQuestion"
+            app:destination="@id/tenQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/nineQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/tenQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.TenQuestion"
+        android:label="fragment_ten_question"
+        tools:layout="@layout/fragment_ten_question" >
+        <action
+            android:id="@+id/action_tenQuestion_to_elevenQuestion"
+            app:destination="@id/elevenQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/tenQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/elevenQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.ElevenQuestion"
+        android:label="fragment_eleven_question"
+        tools:layout="@layout/fragment_eleven_question" >
+        <action
+            android:id="@+id/action_elevenQuestion_to_twelveQuestion"
+            app:destination="@id/twelveQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/elevenQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/twelveQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.TwelveQuestion"
+        android:label="fragment_twelve_question"
+        tools:layout="@layout/fragment_twelve_question" >
+        <action
+            android:id="@+id/action_twelveQuestion_to_thirteenQuestion"
+            app:destination="@id/thirteenQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/twelveQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirteenQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.ThirteenQuestion"
+        android:label="fragment_thirteen_question"
+        tools:layout="@layout/fragment_thirteen_question" >
+        <action
+            android:id="@+id/action_thirteenQuestion_to_positiveOnCovid"
+            app:destination="@id/positiveOnCovid"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@id/thirteenQuestion"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_thirteenQuestion_to_fourteenQuestion"
+            app:destination="@id/fourteenQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/thirteenQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourteenQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.FourteenQuestion"
+        android:label="fragment_fourteen_question"
+        tools:layout="@layout/fragment_fourteen_question" >
+        <action
+            android:id="@+id/action_fourteenQuestion_to_fifteenQuestion"
+            app:destination="@id/fifteenQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/fourteenQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/underEighteen"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.UnderEighteen"
+        android:label="fragment_under_eighteen"
+        tools:layout="@layout/fragment_under_eighteen" >
+        <action
+            android:id="@+id/action_underEighteen_to_secondQuestion"
+            app:destination="@id/secondQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/underEighteen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifteenQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.FifteenQuestion"
+        android:label="fragment_fifteen_question"
+        tools:layout="@layout/fragment_fifteen_question" >
+        <action
+            android:id="@+id/action_fifteenQuestion_to_sixteenQuestion"
+            app:destination="@id/sixteenQuestion"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/fifteenQuestion"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fifteenQuestion_to_positiveOnCovid"
+            app:destination="@id/positiveOnCovid"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@id/fifteenQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/stranger"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.Stranger"
+        android:label="fragment_stranger"
+        tools:layout="@layout/fragment_stranger" />
+    <fragment
+        android:id="@+id/sixteenQuestion"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.SixteenQuestion"
+        android:label="fragment_sixteen_question"
+        tools:layout="@layout/fragment_sixteen_question" >
+        <action
+            android:id="@+id/action_sixteenQuestion_to_pregnent"
+            app:destination="@id/pregnent"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/sixteenQuestion"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregnent"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.pregnent"
+        android:label="fragment_pregnent"
+        tools:layout="@layout/fragment_pregnent" >
+        <action
+            android:id="@+id/action_pregnent_to_positiveOnCovid"
+            app:destination="@id/positiveOnCovid"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@id/pregnent"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/positiveOnCovid"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.questionsForVaccination.PositiveOnCovid"
+        android:label="fragment_positive_on_covid"
+        tools:layout="@layout/fragment_positive_on_covid" />
+</navigation>

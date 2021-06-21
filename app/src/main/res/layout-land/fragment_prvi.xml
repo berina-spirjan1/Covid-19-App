@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prviFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.welcomeFragments.PrviFragment">
+
+    <Button
+        android:id="@+id/prijava"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/blue1"
+        android:fontFamily="@font/alfa_slab_one"
+        android:onClick="prijaviSe"
+        android:text="SIGN UP FOR VACCINATION"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/naslov1"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:shadowColor="#FFFFFF"
+        android:text="IMMUNIZATION"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="226dp"
+        android:layout_height="99dp"
+        android:src="@drawable/a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="253dp"
+        android:layout_height="175dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="left"
+        android:text="The vaccine is a safe and effective way to protect individuals from serious preventable diseases as it stimulates the body to build resistance to a particular infection and strengthens the immune system by training it to form antibodies."
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

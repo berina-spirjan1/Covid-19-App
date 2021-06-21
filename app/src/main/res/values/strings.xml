@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">COVID-19 Vaccination App</string>
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="informacije1">Moderna and Pfizer COVID-19 vaccines both require two doses. It’s best if you get your second dose from the same brand as your first dose. For example, if you got a Moderna first dose, it’s best to get Moderna for your second dose.</string>
+    <string name="informacije2">Mild side effects are normal signs your body is building protection, and they usually go away after a few days. Severe reactions from the vaccine are rare. To be safe, your provider will have you wait on-site for 15-30 minutes after your shot. There\'s no evidence that the vaccines cause long-term health problems.</string>
+    <string name="informacije3">The people at highest risk of exposure such as health care and frontline workers will receive the vaccine on priority. These personnel are also likely source of infection of their family members. Other family members will be vaccinated according to the age specific prioritization by the Government of Bosnia and Herzegovina.
+        Based on the potential availability of vaccines the Government of Bosnia and Herzegovina has selected the priority groups who will be vaccinated on priority as they are at higher risk.
+        The first group includes healthcare and frontline workers.
+        The second group to receive COVID-19 vaccine will be persons over 65 years of age and persons between 45 and 64 years of age with comorbid conditions.</string>
+    <string name="sign_in_for_vaccination">SIGN IN FOR VACCINATION</string>
+    <string name="change_language">CHANGE LANGUAGE</string>
+    <string name="immunization">IMMUNIZATION</string>
+    <string name="the_vaccine_is_a_safe_and_effective_way_to_protect_individuals_from_serious_preventable_diseases_as_it_stimulates_the_body_to_build_resistance_to_a_particular_infection_and_strengthens_the_immune_system_by_training_it_to_form_antibodies">The vaccine is a safe and effective way to protect individuals from serious preventable diseases as it stimulates the body to build resistance to a particular infection and strengthens the immune system by training it to form antibodies.</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_for_base"
+    app:startDestination="@id/addFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.list.ListFragment"
+        android:label="Registered persons"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment"
+            app:destination="@id/updateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.add.AddFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_addFragment_to_thanksFragment"
+            app:destination="@id/thanksFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.fragments.updates.UpdateFragment"
+        android:label="Update persons"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/fragment_fade_enter" />
+        <argument
+            android:name="currentUser"
+            app:argType="ba.unsa.pmf.math.covid_19vaccinationapp.model.User" />
+        <action
+            android:id="@+id/action_updateFragment_to_thanksFragment"
+            app:destination="@id/thanksFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/thanksFragment"
+        android:name="ba.unsa.pmf.math.covid_19vaccinationapp.lastFragment.ThanksFragment"
+        android:label="Thank you for registration"
+        tools:layout="@layout/fragment_thanks" />
+</navigation>

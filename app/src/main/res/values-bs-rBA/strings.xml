@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">COVID-19 Aplikacija za vakcinaciju</string>
+    <string name="informacije1">Cjepiva Moderna i Pfizer COVID-19 zahtijevaju dvije doze. Najbolje je ako drugu dozu uzmete od iste marke kao i prvu dozu. Na primjer, ako ste dobili prvu dozu Moderne, najbolje je nabaviti Modernu za drugu dozu.</string>
+    <string name="informacije2">Blage nuspojave normalni su znakovi da vaše tijelo gradi zaštitu i obično nestanu nakon nekoliko dana. Teške reakcije cjepiva su rijetke. Da biste bili sigurni, vaš će vas pružatelj usluge čekati 15-30 minuta nakon pucanja. Nema dokaza da cjepiva uzrokuju dugoročne zdravstvene probleme.</string>
+    <string name="informacije3">Ljudi s najvećim rizikom od izloženosti, poput zdravstvene zaštite i radnika u prvoj liniji, primat će cjepivo prioritetno. To osoblje također je vjerojatno izvor zaraze članova njihove obitelji. Ostali članovi obitelji bit će cijepljeni u skladu s određivanjem dobnih prioriteta od strane Vlade Bosne i Hercegovine.
+        Na osnovu potencijalne dostupnosti cjepiva, Vlada Bosne i Hercegovine odabrala je prioritetne skupine koje će se cijepiti prioritetno, jer su u većem riziku.
+        Prva skupina uključuje zdravstvene radnike i radnike u prvoj liniji.
+        Druga skupina koja će dobiti cjepivo protiv COVID-19 bit će osobe starije od 65 godina i osobe između 45 i 64 godine s popratnim bolestima.</string>
+    <string name="sign_in_for_vaccination">PRIJAVI SE ZA VAKCINACIJU</string>
+    <string name="change_language">PROMIJENI JEZIK</string>
+    <string name="immunization">IMUNIZACIJA</string>
+    <string name="the_vaccine_is_a_safe_and_effective_way_to_protect_individuals_from_serious_preventable_diseases_as_it_stimulates_the_body_to_build_resistance_to_a_particular_infection_and_strengthens_the_immune_system_by_training_it_to_form_antibodies">Cjepivo je siguran i učinkovit način zaštite pojedinaca od ozbiljnih bolesti koje se mogu spriječiti jer potiče tijelo na izgradnju otpornosti na određenu infekciju i jača imunološki sustav trenirajući ga da stvara antitijela.</string>
+</resources>
